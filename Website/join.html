@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS:GOProject</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="join.css" rel="stylesheet">
+
+	 <script>
+	 function validateForm() {
+var hname = document.forms["theform"]["username"].value;
+var pass = document.forms["theform"]["password"].value;
+if (hname == "") {
+alert("You must insert your UserName");
+return false;
+}
+else if(pass.length<10){
+alert("Your password is not correct(It must contain at least 10 charachters)");
+return false;
+}
+}
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $("#newform").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="csgologo100.png" alt="Logo-CSGO"></a>
+
+   <button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+   <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+		<li class="nav-item">
+				<a class="nav-link" href="teams.html">Teams</a>
+			</li>
+		<li class="nav-item">
+				<a class="nav-link" href="tournaments.html">Tournaments</a>
+			</li>
+		<li class="nav-item">
+				<a class="nav-link" href="join.html">Join</a>
+			</li>
+	 </ul>
+	</div>
+
+		</div>
+</nav>
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-lg-6">
+
+<div class="basicform">
+<form name="theform" action="https://hltv.org" method="post" onsubmit="return validateForm()">
+
+
+		<fieldset>
+			<legend id="leg">SIGN-IN</legend>
+			<div class="fb">
+					<div class="theform">UserName:</div>
+					<input id="em" name="username" type="text" placeholder="UserName" ><br>
+
+					<div class="theform">Password:</div>
+					<input id="pw" name="password" type="password" placeholder="password"><br>
+					<input type="submit" value="SIGN IN" id="sub">
+
+					<p>If you dont have an account, please press the button to Sign Up
+					<button class="favorite styled"
+									type="button" id="toggle">
+							SIGN UP
+					</button></p>
+			</div>
+			</fieldset>
+		</form>
+
+<form action="https://cscie12.dce.harvard.edu/echo" method="post">
+
+<div id="newform">
+<fieldset>
+<legend>Sign Up Form:</legend>
+
+<ul>
+<li><label for="form-name">Name:</label><input type="text" name="firstname" id="form-name" placeholder="Vigan" required ></li>
+
+<li><label for="form-surname">Surname:</label><input type="text" name="surname" id="form-surname" placeholder="Bajrami" required ></li>
+
+<li><label for="form-birthday">Birthday:</label><input type="date" name="birthday" id="form-birthday" required ></li>
+
+<li><label for="form-password">Password:</label><input type="password" name="password" id="form-password" required ></li>
+
+<li><label for="form-email">Email Address:</label><input type="email" name="emailaddress" id="form-email" placeholder="myemail@gmail.com" required ></li>
+
+<li><label for="form-tel">Telephone Number:</label><input type="tel" name="telephone" id="form-tel" placeholder="000-111-222" required ></li>
+
+<li><label for="form-game">What other games do you enjoy to play</label><br>
+<textarea name="the game" rows="4" cols="100" maxlength="600" id="form-game" placeholder="Only 600 charachters!!!"></textarea></li>
+</ul>
+</fieldset>
+
+<h2>Choose your favourites from the competetive scene:</h2>
+
+
+<fieldset>
+
+<legend>Team</legend>
+<ul>
+<li><input type="radio" name="team" value="NIP"> NIP</li>
+<li><input type="radio" name="team" value="FNATIC"> FNATIC</li>
+<li><input type="radio" name="team" value="DIGNITAS"> DIGNITAS</li>
+<li><input type="radio" name="team" value="FAZE"> FAZE</li>
+<li><input type="radio" name="team" value="ASTRALIS"> ASTRALIS</li>
+</ul>
+</fieldset>
+
+<fieldset>
+<legend>Player</legend>
+<ul>
+<li><input type="checkbox" name="player" value="Get_Right" checked> Get_Right</li>
+<li><input type="checkbox" name="player" value="Coldzera" > Coldzera</li>
+<li><input type="checkbox" name="player" value="Simple"> Simple</li>
+<li><input type="checkbox" name="player" value="Niko"> Niko</li>
+</ul>
+</fieldset>
+
+
+<p>Choose your competetive rank: <select name="rank"  >
+<optgroup label="high rank">
+<option value="GE" selected>Global Elite</option>
+<option value="SMG" >Supreme Master First Class</option>
+<option value="LEM">Legendary Eagle Master</option>
+<option value="LE">Legendary Eagle</option>
+<option value="DMG">Distinguished Master Guardian</option>
+</optgroup>
+<optgroup label="low rank">
+<option value="MG3">Master Guardian 3</option>
+<option value="MG2">Master Guardian 2</option>
+<option value="MG1">Master Guardian 1</option>
+<option value="SE">Silver Elite</option>
+</optgroup>
+</select>
+</p>
+
+<label for="hours">How many hours do you have in the game:</label>
+<input type="number" id="hours" name="hours" min="1" max="15000">
+
+<div class="file">
+<label for="form-file">Submit a picture of your best score in the game:</label>
+<input id="form-file" name="file" type="file" >
+</div>
+
+<div class="terms">
+	<label for="form-cond">I agree to the terms and conditions:</label>
+	<input id="form-cond" name="conditions" type="checkbox" required >
+</div>
+
+<p><input type="submit" value="SIGN UP">
+<input type="reset"></p>
+</div>
+</form>
+</div>
+</div>
+
+<div class="col-lg-6">
+	<h3>GeT_RiGhT's 1 second clutch</h3>
+
+	<iframe id="video1" width="700" height="350" src="https://www.youtube.com/embed/Czg06rmnrVI" allowfullscreen>
+	</iframe>
+	<figure>
+	        <img src="fig.jpg" alt="coldzera" width="600" height="300" id="coldid">
+	        <figcaption style="color: gold">The official Graffiti that was made for Coldzera's legendary play</figcaption>
+	    </figure>
+
+</div>
+
+
+</div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<hr class="light">
+<!--- Connect -->
+
+<div class="container-fluid padding">
+<div class="row text-center padding">
+  <div class="col-12">
+      <h2>Connect</h2>
+	</div>
+	<div class="col-12 social padding">
+          <a href="https://www.facebook.com/CSGOProject-291008128228383/?modal=admin_todo_tour" target='_blank'><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/CGoproject" target='_blank'><i class="fab fa-twitter"></i></a>
+					<a href="https://www.youtube.com/channel/UC9czafDynE-dD58eqqFbrCw?view_as=subscriber" target='_blank'><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/csgoproject18/channel/" target='_blank'><i class="fab fa-instagram"></i></a>
+</div>
+	</div>
+</div>
+<p id="back">To not scroll anymore more, press this button and go back to the beggining of the page! <a href="join.html">THE FORM</a></p>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+ <div class="col-md-4">
+   <img src="csgowhite.png" alt="WHITELOGO-CSGO">
+	 <hr class="light">
+	 <p>123-321-4357</p>
+	 <p>csgoproject18@gmail.com</p>
+	 <p>Tetovo, Macedonia, 1200</p>
+ </div>
+<div class="col-md-4">
+    <hr class="light">
+		<h5>Maintenance Hours</h5>
+		<hr class="light">
+    <p>Tuesday: 10AM-11AM</p>
+		<p>Saturday: 10AM-11AM</p>
+		<p>Sunday: 9AM-12AM</p>
+</div>
+ <div class="col-md-4">
+    <hr class="light">
+		<h5>CS:GO Trading Sites</h5>
+		<hr class="light">
+    <p>cs.money</p>
+		<p>raffletrades.gg</p>
+		<p>tradeit.gg</p>
+</div>
+ <div class="col-12">
+	 <hr class="light-100">
+	 <h5>&copy; cs:goproject.com</h5>
+ </div>
+</div>
+</div>
+</footer>
+
+
+
+
+</body>
+</html>

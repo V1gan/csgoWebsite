@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 40px;
+  width: 150%;
+}
+.navlink {
+  font-size: 1.4em !important;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 4rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa4;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+.social a {
+  font-size: 4em;
+  padding: 2rem;
+}
+}
+@media (max-width: 768px) {
+
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+}
+@media (max-width: 576px) {
+
+.display-4 {
+  font-size: 160%;
+}
+.social a {
+  font-size: 2em;
+  padding: .7rem;
+}
+}
+
+
+
+
+
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+tournaments, body {
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(BACKGROUND/cigarette4.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2 {
+color: #EAE1DF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  float: left;
+  width: 45%;
+  margin: 0 2.5%;
+  border-style: dashed;
+  border-color: gold;
+}
+.links{
+  float: left;
+  width: 22.5%;
+  margin: 0 0 0 2.5%;
+  border-style: dashed;
+  border-color: gold;
+
+}
+.news{
+  float: left;
+  width: 22.5%;
+  margin: 0 2.5% 0 0;
+  color:white;
+  text-align: center;
+  list-style: inside;
+  border-style: dashed;
+  border-color: gold;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 20px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Content */
+.content {
+
+
+  padding-top: 10px;
+  padding-left: 130px;
+  margin-right: 50px;
+}
+
+h4, h3 {
+color: #EAE1DF;
+padding-right: 50px;
+font-weight: bold;
+}
+h2{
+  margin-left: 50px;
+}
+h1{
+  color:orange;
+  text-align: center;
+}
+p {
+  color: #EAE1DF;;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.card-body{
+  background-color: black;
+}
+.card-text{
+  color: gold;
+}
+
+.card-title{
+  font-weight: bold;
+  color: yellow;
+}
+
+.card{
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+#hide, #show{
+  background-color: black;
+  color: gold;
+  margin-bottom: 10px;
+  margin-left: 55px;
+
+}
+
+
+
+#hideshow {
+  background-color: black;
+  color: gold;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#orderplayers{
+  color: gold;
+  margin-bottom: 15px;
+}
+
+#rankings, #orderteams{
+  color: orange;
+}
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
